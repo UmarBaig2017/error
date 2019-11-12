@@ -13,13 +13,20 @@ import Errors from "./views/Errors";
 import ComponentsOverview from "./views/ComponentsOverview";
 import Tables from "./views/Tables";
 import BlogPosts from "./views/BlogPosts";
-import Sigin from "./views/Signin"
+import Signin from "./views/Signin";
+
+export const notAuthenticatedRoutes = [
+  {
+    path: "/",
+    component: Signin
+  }
+];
 
 export default [
   // {
   //   path: "/",
-    // layout: DefaultLayout, ******** is ka commt hata kar dekhna zara**  ye mene alag se component bnaya hay 
-  //   component: Sigin
+  // layout: DefaultLayout, ******** is ka commt hata kar dekhna zara**  ye mene alag se component bnaya hay
+  //   component: Signin
   // },
 
   // {
